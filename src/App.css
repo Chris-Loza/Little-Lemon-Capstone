@@ -227,7 +227,7 @@ input, label{
 }
 
 footer section{
-  padding: 10px 13%;
+  padding: 100px 13%;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -241,10 +241,20 @@ footer section{
 
 .company-info p{
   width: 320px;
+  text-align: justify;
+}
+
+.company-info {
+  width: 600px;
 }
 
 footer h3{
   font-size: 18px;
+}
+
+.contactFooter {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 footer ul{
@@ -257,6 +267,10 @@ footer ul li{
 
 footer ul li a {
   color: #000;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
 }
 
 .footer-links {
