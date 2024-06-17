@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 
-
 const BookingForm = (props) => {
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
