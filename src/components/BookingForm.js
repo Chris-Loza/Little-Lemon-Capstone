@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import * as Yup from 'yup';
-import { useFormik } from "formik";
+
 
 const BookingForm = (props) => {
     const [date, setDate] = useState("");
@@ -19,23 +18,6 @@ const BookingForm = (props) => {
         props.dispatch(e);
     };
 
-    const formik = useFormik({
-        initialValues: {
-            date: "",
-            time: "",
-            guest: 1,
-            occasion: ""
-        },
-        onSubmit: (values) => {
-            submitForm(values);
-        },
-        validationSchema: Yup.object({
-            date: Yup.string().required("Date is required"),
-            time: Yup.string().required("Time is required"),
-            occasion: Yup.string().required("Occasion is required")
-        }),
-    });
-    
     return (
         <header>
             <section>
